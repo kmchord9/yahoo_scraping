@@ -1,0 +1,3 @@
+yahooニュースのトップを取得
+
+実行にはBeautifulSoupのライブラリが必要
