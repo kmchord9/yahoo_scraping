@@ -22,6 +22,7 @@ homeDataLists = soupHome.find(id="tabpanelTopics1").find("ul").find_all("li")
 for homeDataList in homeDataLists:
     print("〇"+homeDataList.find("h1").string)
     articleUrl = homeDataList.find("a").get('href')
+    print(articleUrl)
     soupArticle = getSoupData(articleUrl)
 
     articleDataLists = soupArticle.find(id="uamods-pickup").find_all("a")
